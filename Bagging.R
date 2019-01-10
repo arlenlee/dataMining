@@ -9,7 +9,7 @@ nrr<-nrow(testData)
 mt<-matrix(nrow = nrr,ncol = 101)
 merr<-matrix(nrow = 100,ncol = 1)
 mtk=0;
-# 
+#knn
 for (i in 1:33) 
 {
   
@@ -18,7 +18,7 @@ for (i in 1:33)
   for (i in 1:nr) {
     tempTrain[1,]<-data[t[i],]
   }
-  tempTrain[,nc]<-as.factor(tempTrain[,nc]) #cover factor
+  tempTrain[,nc]<-as.factor(tempTrain[,nc]) #cover factor 
   
   t2<-sort(unique(t))
   
@@ -126,7 +126,7 @@ for (i in 1:nrr) {
 }
 
 variety<-matrix(nrow = 100,ncol = 100)
-#variety
+#variety 多样性测度
 for (i in 1:100) {
   for (j in i:100) {
     a<-0
